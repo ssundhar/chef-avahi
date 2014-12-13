@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Chef-Avahi : Chef Cookbook for Avahi">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Chef-Avahi</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pwelch/chef-avahi">View on GitHub</a>
+
+          <h1 id="project_title">Chef-Avahi</h1>
+          <h2 id="project_tagline">Chef Cookbook for Avahi</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pwelch/chef-avahi/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pwelch/chef-avahi/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><a href="http://travis-ci.org/pwelch/chef-avahi"><img src="https://secure.travis-ci.org/pwelch/chef-avahi.png" alt="Build Status"></a>
+<a href="https://gemnasium.com/pwelch/chef-avahi"><img src="https://gemnasium.com/pwelch/chef-avahi.png" alt="Dependency Status"></a></p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Chef cookbook that installs and configures <a href="http://avahi.org/">avahi</a> the zeroconf software.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include <code>avahi::default</code> recipe in the <code>run_list</code>.</p>
+
+<p>To disable the avahi-daemon set the attribute like so:</p>
+
+<pre><code>  default['avahi']['disable_service'] = true
+</code></pre>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<p>Development requires <a href="http://vagrantup.com/">Vagrant</a> and these vagrant-plugins:</p>
+
+<ul>
+<li><code>vagrant plugin install vagrant-berkshelf</code></li>
+<li><code>vagrant plugin install vagrant-omnibus</code></li>
+</ul>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h2>
+
+<p>Running tests:</p>
+
+<div class="highlight highlight-bash"><pre>bundle <span class="pl-s3">exec</span> strainer <span class="pl-s3">test</span></pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+
+<p>Source code availabe <a href="https://github.com/pwelch/chef-avahi">here</a></p>
+
+<h2>
+<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>To Do</h2>
+
+<ul>
+<li>Ensure support on other platforms (RHEL/Arch).</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Chef-Avahi maintained by <a href="https://github.com/pwelch">pwelch</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
